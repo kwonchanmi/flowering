@@ -1,0 +1,65 @@
+<androidx.preference.PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:iconSpaceReserved="false"
+    tools:showIn="@layout/app_bar_main"
+    style="@style/AppTheme.Preference">
+
+    <!--여백-->
+    <SwitchPreferenceCompat
+        app:key="notifications" />
+
+    <PreferenceCategory
+        app:key="notifications_category"
+        app:title="사진"
+        app:iconSpaceReserved="false"
+        android:textColorPrimary="@color/baseColor">
+
+        <SwitchPreferenceCompat
+            app:iconSpaceReserved="false"
+            app:key="notifications"
+            app:title="촬영한 사진 저장"/>
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="help_category"
+        app:title="제보"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="feedback"
+            app:summary="분류 가능한 꽃 추가, 앱 관련 요청"
+            app:title="요청"/>
+
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="feedback"
+            app:summary="잘못된 꽃 인식, 앱 오류 제보 "
+            app:title="오류 제보"/>
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="help_category"
+        app:title="정보"
+       app:iconSpaceReserved="false">
+
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="feedback"
+            app:title="도움말"/>
+
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="feedback"
+            app:summary="오픈소스 소프트웨어 라이선스 정보"
+            app:title="오픈소스 라이선스"/>
+
+    </PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>
